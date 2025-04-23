@@ -1,0 +1,1 @@
+### This repo its a portifolio written in v0 vercel 
