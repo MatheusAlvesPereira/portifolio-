@@ -88,7 +88,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:text-5xl"
           >
-            Hi, I'm Your Name
+            Hi, I'm Matheus Alves
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -122,9 +122,10 @@ export default function Portfolio() {
                 <FadeIn delay={0.2} direction="left">
                   <div>
                     <p className="mb-4 text-muted-foreground">
-                      I'm a developer with a passion for building modern web applications. With experience in front-end
-                      and back-end technologies, I enjoy creating responsive, user-friendly interfaces and robust
-                      server-side solutions.
+                      I am a Software Developer, I like working with different technologies, opening web projects 
+                      based on a defined Design and developing applications: front-end, and back-end. 
+                      I love studying Software Development.
+
                     </p>
                     <p className="text-muted-foreground">
                       When I'm not coding, you can find me exploring new technologies, contributing to open-source
@@ -161,27 +162,30 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Senior Frontend Developer</h3>
+                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Jan 2022 - Present</span>
+                            <span>dec 2024 - Present</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>Tech Company Inc.</span>
+                          <span>FutebolCard.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Led the development of the company's flagship web application, improving performance by 40%
-                          and implementing new features that increased user engagement by 25%. Mentored junior
-                          developers and collaborated with the design team to create a cohesive user experience.
+                          Developed payment systems and website automation systems using PHP (PHP5, PHP7, PHP8) and Zend Framework.
+                          Improved transaction handling efficiency by optimizing existing codebases.
+                          Collaborated with front-end teams to ensure seamless integration of backend services.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>React</Badge>
-                          <Badge>TypeScript</Badge>
-                          <Badge>Next.js</Badge>
-                          <Badge>Tailwind CSS</Badge>
-                          <Badge>GraphQL</Badge>
+                          <Badge>PHP 5.6</Badge>
+                          <Badge>PHP 7</Badge>
+                          <Badge>PHP 8</Badge>
+                          <Badge>Zend Framework</Badge>
+                          <Badge>Laravel 9</Badge>
+                          <Badge>Docker</Badge>
+                          <Badge>Docker compose</Badge>
+                          <Badge>SQL Server</Badge>
                         </div>
                       </div>
                     </div>
@@ -193,26 +197,25 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Frontend Developer</h3>
+                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Mar 2020 - Dec 2021</span>
+                            <span>Nov 2023 - Present</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>Digital Solutions Ltd.</span>
+                          <span>Anoto.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed responsive web applications for various clients, focusing on accessibility and
-                          cross-browser compatibility. Collaborated with backend developers to integrate APIs and
-                          optimize data flow. Participated in code reviews and implemented best practices.
+                        Created and maintained open-source projects with over 50 contributors.
+                        Designed REST APIs for seamless integration with various applications.
+                        Facilitated collaboration by implementing version control best practices using Git.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>JavaScript</Badge>
-                          <Badge>React</Badge>
-                          <Badge>Redux</Badge>
-                          <Badge>SASS</Badge>
+                          <Badge>PHP 8</Badge>
+                          <Badge>Laravel 12</Badge>
+                          <Badge>Next.js</Badge>
                           <Badge>REST APIs</Badge>
                         </div>
                       </div>
@@ -225,27 +228,27 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Junior Web Developer</h3>
+                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Jun 2018 - Feb 2020</span>
+                            <span>Jul 2023 - dec 2023</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>WebCraft Agency</span>
+                          <span>Muniz Auto Center.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Built and maintained websites for small to medium-sized businesses. Implemented responsive
-                          designs and ensured cross-browser compatibility. Assisted senior developers with larger
-                          projects and learned modern web development practices.
+                          Developed responsive web applications using React and Vue.js, improving user experience and accessibility by 15%.
+                          Implemented SEO best practices to increase website traffic by 20%.
+                          Created CI/CD processes to streamline deployment workflows.Tags: React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
                           <Badge>CSS3</Badge>
                           <Badge>JavaScript</Badge>
-                          <Badge>jQuery</Badge>
-                          <Badge>WordPress</Badge>
+                          <Badge>Vue.js</Badge>
+                          <Badge>CI/CD</Badge>
                         </div>
                       </div>
                     </div>
