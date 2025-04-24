@@ -25,7 +25,7 @@ export default function Portfolio() {
       <header className="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold">
-            <span>Your Name</span>
+            <span>Matheus Alves</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
@@ -47,19 +47,19 @@ export default function Portfolio() {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <div className="hidden md:flex items-center gap-2">
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/MatheusAlvesPereira" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="icon">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Link href="mailto:your.email@example.com">
+              <Link href="mailto:matheusalvessilvabr@gmail.com">
                 <Button variant="ghost" size="icon">
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
@@ -288,24 +288,26 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>FutebolCard</CardTitle>
                       <CardDescription className="mt-2">
-                        A brief description of your project. What it does, the problem it solves, and the technologies
-                        used.
+                      Provides tailored solutions to top football clubs and stadiums in Brazil and the US, enhancing the fan experience.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        <Badge>React</Badge>
-                        <Badge>Next.js</Badge>
-                        <Badge>Tailwind CSS</Badge>
+                        <Badge>PHP</Badge>
+                        <Badge>Zend Framework</Badge>
+                        <Badge>Laravel 9</Badge>
+                        <Badge>Docker</Badge>
+                        <Badge>Docker compose</Badge>
+                        <Badge>SQL Server</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">
+                        <Link href="#" target="_blank" rel="noopener noreferrer">
                           <Github className="mr-2 h-4 w-4" />
-                          Code
+                          Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://project1-demo.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://www.futebolcard.com/" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -331,24 +333,25 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>Anoto</CardTitle>
                       <CardDescription className="mt-2">
-                        A brief description of your project. What it does, the problem it solves, and the technologies
-                        used.
+                      Anoto is an organization that serves as a notebook, bringing together various projects in one place.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>TypeScript</Badge>
                         <Badge>Node.js</Badge>
-                        <Badge>MongoDB</Badge>
+                        <Badge>Laravel 12</Badge>
+                        <Badge>Next.js</Badge>
+                        <Badge>REST APIs</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/Anoto-ecossistem" target="_blank" rel="noopener noreferrer">
                           <Github className="mr-2 h-4 w-4" />
                           Code
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://project2-demo.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://anoto-website.vercel.app/" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -372,26 +375,27 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Project Name 3</CardTitle>
+                      <CardTitle>Muniz Auto Center</CardTitle>
                       <CardDescription className="mt-2">
-                        A brief description of your project. What it does, the problem it solves, and the technologies
-                        used.
+                      The largest auto center franchise in Brazil — and the fastest-growing.
+                      A 100% Brazilian business with over 150 stores nationwide.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Vue.js</Badge>
-                        <Badge>Firebase</Badge>
-                        <Badge>Tailwind CSS</Badge>
+                        <Badge>Javascript</Badge>
+                        <Badge>HTML5</Badge>
+                        <Badge>CSS3</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">
+                        <Link href="#" target="_blank" rel="noopener noreferrer">
                           <Github className="mr-2 h-4 w-4" />
-                          Code
+                          Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://project3-demo.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://munizautocenter.com.br/" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -415,26 +419,23 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Project Name 4</CardTitle>
+                      <CardTitle>RealCripto</CardTitle>
                       <CardDescription className="mt-2">
-                        A brief description of your project. What it does, the problem it solves, and the technologies
-                        used.
+                      This website is an informational platform focused on providing data and insights about the cryptocurrency market.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        <Badge>React</Badge>
-                        <Badge>Node.js</Badge>
-                        <Badge>MongoDB</Badge>
+                        <Badge>Wordpress</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="https://github.com/yourusername/project4" target="_blank" rel="noopener noreferrer">
+                        <Link href="#" target="_blank" rel="noopener noreferrer">
                           <Github className="mr-2 h-4 w-4" />
-                          Code
+                          Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://project4-demo.com" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://realcripto.com.br/" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -462,27 +463,27 @@ export default function Portfolio() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Badge>HTML5</Badge>
-                          <span className="text-sm text-muted-foreground">Expert</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>CSS3/SASS</Badge>
-                          <span className="text-sm text-muted-foreground">Expert</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>JavaScript</Badge>
-                          <span className="text-sm text-muted-foreground">Expert</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>React</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>Next.js</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Tailwind CSS</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
+                          <Badge>Vue.js</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
                     </CardContent>
@@ -498,27 +499,19 @@ export default function Portfolio() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Badge>Node.js</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Express</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
+                          <Badge>PHP</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>MongoDB</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
+                          <Badge>Laravel</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>PostgreSQL</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Firebase</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>GraphQL</Badge>
-                          <span className="text-sm text-muted-foreground">Beginner</span>
+                          <Badge>Zend Framework</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
                     </CardContent>
@@ -534,27 +527,27 @@ export default function Portfolio() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Badge>Git/GitHub</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>TypeScript</Badge>
-                          <span className="text-sm text-muted-foreground">Advanced</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Docker</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>CI/CD</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Jest</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
+                          <Badge>Docker</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Docker compose</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>SQL Server</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>Figma</Badge>
-                          <span className="text-sm text-muted-foreground">Intermediate</span>
+                          <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
                     </CardContent>
@@ -579,15 +572,15 @@ export default function Portfolio() {
                     <CardContent className="space-y-4">
                       <div className="flex items-center gap-3">
                         <Mail className="h-5 w-5 text-muted-foreground" />
-                        <p>your.email@example.com</p>
+                        <p>matheusalvessilvabr@gmail.com</p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-muted-foreground" />
-                        <p>linkedin.com/in/yourusername</p>
+                        <p>www.linkedin.com/in/matheus-alves-pereira-da-silva/</p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Github className="h-5 w-5 text-muted-foreground" />
-                        <p>github.com/yourusername</p>
+                        <p>github.com/MatheusAlvesPereira</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -650,22 +643,22 @@ export default function Portfolio() {
       <footer className="border-t bg-muted/40">
         <div className="container flex flex-col items-center justify-between gap-4 py-8 md:h-24 md:flex-row md:py-0">
           <div className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Matheus Alves. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/MatheusAlvesPereira" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:your.email@example.com">
+            <Link href="mailto:matheusalvessilvabr@gmail.com">
               <Button variant="ghost" size="icon">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
