@@ -11,6 +11,12 @@ import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { MobileNav } from "@/components/mobile-nav"
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations"
+import heroprofilepicture from "@/public/heroprofilepicture.jpg"
+import infoprofile from "@/public/infoprofile.png"
+import futebolCard from "@/public/futebolcard.png"
+import anoto from "@/public/anoto.png"
+import munizAutoCenter from "@/public/MunizAutoCenter.png"
+import realCripto from "@/public/RealCripto.png"
 
 export default function Portfolio() {
   return (
@@ -74,7 +80,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/placeholder.svg?height=150&width=150"
+              src={heroprofilepicture}
               width={150}
               height={150}
               alt="Profile"
@@ -136,7 +142,7 @@ export default function Portfolio() {
                 <FadeIn delay={0.3} direction="right">
                   <div className="flex items-center justify-center">
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src={infoprofile}
                       width={400}
                       height={300}
                       alt="About me"
@@ -271,16 +277,16 @@ export default function Portfolio() {
                     <CardHeader className="p-4">
                       <div className="aspect-video overflow-hidden rounded-lg">
                         <Image
-                          src="/placeholder.svg?height=200&width=350"
+                          src={futebolCard}
                           width={350}
                           height={200}
-                          alt="Project 1"
+                          alt="FutebolCard project"
                           className="h-full w-full object-cover transition-transform hover:scale-105"
                         />
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Project Name 1</CardTitle>
+                      <CardTitle>FutebolCard</CardTitle>
                       <CardDescription className="mt-2">
                         A brief description of your project. What it does, the problem it solves, and the technologies
                         used.
@@ -314,7 +320,7 @@ export default function Portfolio() {
                     <CardHeader className="p-4">
                       <div className="aspect-video overflow-hidden rounded-lg">
                         <Image
-                          src="/placeholder.svg?height=200&width=350"
+                          src={anoto}
                           width={350}
                           height={200}
                           alt="Project 2"
@@ -323,7 +329,7 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Project Name 2</CardTitle>
+                      <CardTitle>Anoto</CardTitle>
                       <CardDescription className="mt-2">
                         A brief description of your project. What it does, the problem it solves, and the technologies
                         used.
@@ -357,7 +363,7 @@ export default function Portfolio() {
                     <CardHeader className="p-4">
                       <div className="aspect-video overflow-hidden rounded-lg">
                         <Image
-                          src="/placeholder.svg?height=200&width=350"
+                          src={munizAutoCenter}
                           width={350}
                           height={200}
                           alt="Project 3"
@@ -386,6 +392,49 @@ export default function Portfolio() {
                       </Button>
                       <Button size="sm" asChild>
                         <Link href="https://project3-demo.com" target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </StaggerItem>
+
+                {/* Project 4 */}
+                <StaggerItem>
+                  <Card className="flex flex-col h-full">
+                    <CardHeader className="p-4">
+                      <div className="aspect-video overflow-hidden rounded-lg">
+                        <Image
+                          src={realCripto}
+                          width={350}
+                          height={200}
+                          alt="Project 4"
+                          className="h-full w-full object-cover transition-transform hover:scale-105"
+                        />
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <CardTitle>Project Name 4</CardTitle>
+                      <CardDescription className="mt-2">
+                        A brief description of your project. What it does, the problem it solves, and the technologies
+                        used.
+                      </CardDescription>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>React</Badge>
+                        <Badge>Node.js</Badge>
+                        <Badge>MongoDB</Badge>
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex justify-between mt-auto">
+                      <Button variant="outline" size="sm" asChild>
+                        <Link href="https://github.com/yourusername/project4" target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          Code
+                        </Link>
+                      </Button>
+                      <Button size="sm" asChild>
+                        <Link href="https://project4-demo.com" target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
