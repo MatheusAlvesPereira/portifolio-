@@ -102,7 +102,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="max-w-[700px] text-base text-muted-foreground md:text-lg"
           >
-            A passionate developer focused on creating beautiful and functional web experiences.
+            A creative developer focused on creating beautiful and functional web experiences.
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -168,7 +168,7 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+                          <h3 className="text-xl font-semibold">Software Engineer</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>dec 2024 - Present</span>
@@ -203,7 +203,7 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+                          <h3 className="text-xl font-semibold">Software Engineer</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>Nov 2023 - Present</span>
@@ -234,7 +234,7 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+                          <h3 className="text-xl font-semibold">Software Engineer Internship</h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>Jul 2023 - dec 2023</span>
@@ -247,7 +247,7 @@ export default function Portfolio() {
                         <p className="text-muted-foreground">
                           Developed responsive web applications using React and Vue.js, improving user experience and accessibility by 15%.
                           Implemented SEO best practices to increase website traffic by 20%.
-                          Created CI/CD processes to streamline deployment workflows.Tags: React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
+                          Created CI/CD processes to streamline deployment workflows.Tags: Java, Spring Boot React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
@@ -255,6 +255,8 @@ export default function Portfolio() {
                           <Badge>JavaScript</Badge>
                           <Badge>Vue.js</Badge>
                           <Badge>CI/CD</Badge>
+                          <Badge>Java 11</Badge>
+                          <Badge>Spring Boot</Badge>
                         </div>
                       </div>
                     </div>
@@ -425,6 +427,7 @@ export default function Portfolio() {
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Wordpress</Badge>
+                        <Badge>Elementor</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
@@ -498,11 +501,11 @@ export default function Portfolio() {
                     <CardContent>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
-                          <Badge>Node.js</Badge>
+                          <Badge>PHP 5.6 | 7 | 8 </Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>PHP</Badge>
+                          <Badge>Node.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
@@ -511,6 +514,10 @@ export default function Portfolio() {
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>Zend Framework</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Java 11</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
@@ -525,6 +532,15 @@ export default function Portfolio() {
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
+                        <li className="flex items-center gap-2">
+                          <Badge>Wordpress</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Elementor</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        
                         <li className="flex items-center gap-2">
                           <Badge>Git/GitHub</Badge>
                           <span className="text-sm text-muted-foreground"></span>
