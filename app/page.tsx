@@ -1,22 +1,36 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Github, Mail, Linkedin, ExternalLink, Calendar, Building } from "lucide-react"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Github,
+  Mail,
+  Linkedin,
+  ExternalLink,
+  Calendar,
+  Building,
+} from "lucide-react";
+import { motion } from "framer-motion";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { MobileNav } from "@/components/mobile-nav"
-import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations"
-import heroprofilepicture from "@/public/heroprofilepicture.jpg"
-import infoprofile from "@/public/infoprofile.png"
-import futebolCard from "@/public/futebolcard.png"
-import anoto from "@/public/anoto.png"
-import munizAutoCenter from "@/public/MunizAutoCenter.png"
-import realCripto from "@/public/RealCripto.png"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { MobileNav } from "@/components/mobile-nav";
+import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
+import heroprofilepicture from "@/public/heroprofilepicture.jpg";
+import infoprofile from "@/public/infoprofile.png";
+import futebolCard from "@/public/futebolcard.png";
+import anoto from "@/public/anoto.png";
+import munizAutoCenter from "@/public/MunizAutoCenter.png";
+import realCripto from "@/public/RealCripto.png";
 
 export default function Portfolio() {
   return (
@@ -28,32 +42,55 @@ export default function Portfolio() {
             <span>Matheus Alves</span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#about"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               About
             </Link>
-            <Link href="#experience" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#experience"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Experience
             </Link>
-            <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#projects"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Projects
             </Link>
-            <Link href="#skills" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#skills"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Skills
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="#contact"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Contact
             </Link>
           </nav>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <div className="hidden md:flex items-center gap-2">
-              <Link href="https://github.com/MatheusAlvesPereira" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/MatheusAlvesPereira"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="ghost" size="icon">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="ghost" size="icon">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
@@ -102,7 +139,8 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="max-w-[700px] text-base text-muted-foreground md:text-lg"
           >
-            A creative developer focused on creating beautiful and functional web experiences.
+            A creative developer focused on creating beautiful and functional
+            web experiences.
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -128,14 +166,15 @@ export default function Portfolio() {
                 <FadeIn delay={0.2} direction="left">
                   <div>
                     <p className="mb-4 text-muted-foreground">
-                      I am a Software Developer, I like working with different technologies, opening web projects 
-                      based on a defined Design and developing applications: front-end, and back-end. 
-                      I love studying Software Development.
-
+                      I am a Software Developer, I like working with different
+                      technologies, opening web projects based on a defined
+                      Design and developing applications: front-end, and
+                      back-end. I love studying Software Development.
                     </p>
                     <p className="text-muted-foreground">
-                      When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                      projects, or enjoying outdoor activities.
+                      When I'm not coding, you can find me exploring new
+                      technologies, contributing to open-source projects, or
+                      enjoying outdoor activities.
                     </p>
                   </div>
                 </FadeIn>
@@ -159,7 +198,9 @@ export default function Portfolio() {
         <section id="experience" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
-              <h2 className="mb-6 text-2xl font-bold md:text-3xl">Work Experience</h2>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl">
+                Work Experience
+              </h2>
               <div className="space-y-8">
                 <StaggerContainer className="space-y-8">
                   {/* Experience Item 1 */}
@@ -168,7 +209,9 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Software Engineer</h3>
+                          <h3 className="text-xl font-semibold">
+                            Software Engineer
+                          </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>dec 2024 - Present</span>
@@ -179,9 +222,12 @@ export default function Portfolio() {
                           <span>FutebolCard.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed payment systems and website automation systems using PHP (PHP5, PHP7, PHP8) and Zend Framework.
-                          Improved transaction handling efficiency by optimizing existing codebases.
-                          Collaborated with front-end teams to ensure seamless integration of backend services.
+                          Developed payment systems and website automation
+                          systems using PHP (PHP5, PHP7, PHP8) and Zend
+                          Framework. Improved transaction handling efficiency by
+                          optimizing existing codebases. Collaborated with
+                          front-end teams to ensure seamless integration of
+                          backend services.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>PHP 5.6</Badge>
@@ -203,7 +249,9 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Software Engineer</h3>
+                          <h3 className="text-xl font-semibold">
+                            Software Engineer
+                          </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>Nov 2023 - Present</span>
@@ -214,9 +262,11 @@ export default function Portfolio() {
                           <span>Anoto.</span>
                         </div>
                         <p className="text-muted-foreground">
-                        Created and maintained open-source projects with over 50 contributors.
-                        Designed REST APIs for seamless integration with various applications.
-                        Facilitated collaboration by implementing version control best practices using Git.
+                          Created and maintained open-source projects with over
+                          50 contributors. Designed REST APIs for seamless
+                          integration with various applications. Facilitated
+                          collaboration by implementing version control best
+                          practices using Git.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>PHP 8</Badge>
@@ -234,7 +284,9 @@ export default function Portfolio() {
                       <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                          <h3 className="text-xl font-semibold">Software Engineer Internship</h3>
+                          <h3 className="text-xl font-semibold">
+                            Software Engineer Internship
+                          </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
                             <span>Jul 2023 - dec 2023</span>
@@ -245,9 +297,12 @@ export default function Portfolio() {
                           <span>Muniz Auto Center.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed responsive web applications using React and Vue.js, improving user experience and accessibility by 15%.
-                          Implemented SEO best practices to increase website traffic by 20%.
-                          Created CI/CD processes to streamline deployment workflows.Tags: Java, Spring Boot React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
+                          Developed responsive web applications using React and
+                          Vue.js, improving user experience and accessibility by
+                          15%. Implemented SEO best practices to increase
+                          website traffic by 20%. Created CI/CD processes to
+                          streamline deployment workflows.Tags: Java, Spring
+                          Boot React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
@@ -271,7 +326,9 @@ export default function Portfolio() {
         <section id="projects" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
             <div className="mx-auto max-w-[1200px]">
-              <h2 className="mb-6 text-2xl font-bold md:text-3xl">My Projects</h2>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl">
+                My Projects
+              </h2>
               <StaggerContainer className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {/* Project 1 */}
                 <StaggerItem>
@@ -290,7 +347,9 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>FutebolCard</CardTitle>
                       <CardDescription className="mt-2">
-                      Provides tailored solutions to top football clubs and stadiums in Brazil and the US, enhancing the fan experience.
+                        Provides tailored solutions to top football clubs and
+                        stadiums in Brazil and the US, enhancing the fan
+                        experience.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>PHP</Badge>
@@ -303,13 +362,21 @@ export default function Portfolio() {
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="mr-2 h-4 w-4" />
                           Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://www.futebolcard.com/" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://www.futebolcard.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -335,7 +402,8 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>Anoto</CardTitle>
                       <CardDescription className="mt-2">
-                      Anoto is an organization that serves as a notebook, bringing together various projects in one place.
+                        Anoto is an organization that serves as a notebook,
+                        bringing together various projects in one place.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>TypeScript</Badge>
@@ -347,13 +415,21 @@ export default function Portfolio() {
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="https://github.com/Anoto-ecossistem" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://github.com/Anoto-ecossistem"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="mr-2 h-4 w-4" />
                           Code
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://anoto-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://anoto-website.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -379,8 +455,9 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>Muniz Auto Center</CardTitle>
                       <CardDescription className="mt-2">
-                      The largest auto center franchise in Brazil — and the fastest-growing.
-                      A 100% Brazilian business with over 150 stores nationwide.
+                        The largest auto center franchise in Brazil — and the
+                        fastest-growing. A 100% Brazilian business with over 150
+                        stores nationwide.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Vue.js</Badge>
@@ -391,13 +468,21 @@ export default function Portfolio() {
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="mr-2 h-4 w-4" />
                           Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://munizautocenter.com.br/" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://munizautocenter.com.br/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -423,7 +508,9 @@ export default function Portfolio() {
                     <CardContent className="flex-grow">
                       <CardTitle>RealCripto</CardTitle>
                       <CardDescription className="mt-2">
-                      This website is an informational platform focused on providing data and insights about the cryptocurrency market.
+                        This website is an informational platform focused on
+                        providing data and insights about the cryptocurrency
+                        market.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Wordpress</Badge>
@@ -432,13 +519,21 @@ export default function Portfolio() {
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
                       <Button variant="outline" size="sm" asChild>
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="mr-2 h-4 w-4" />
                           Code(Private)
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
-                        <Link href="https://realcripto.com.br/" target="_blank" rel="noopener noreferrer">
+                        <Link
+                          href="https://realcripto.com.br/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </Link>
@@ -455,7 +550,9 @@ export default function Portfolio() {
         <section id="skills" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
-              <h2 className="mb-6 text-2xl font-bold md:text-3xl">Skills & Technologies</h2>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl">
+                Skills & Technologies
+              </h2>
               <StaggerContainer className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <StaggerItem>
                   <Card>
@@ -540,7 +637,7 @@ export default function Portfolio() {
                           <Badge>Elementor</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
-                        
+
                         <li className="flex items-center gap-2">
                           <Badge>Git/GitHub</Badge>
                           <span className="text-sm text-muted-foreground"></span>
@@ -578,7 +675,9 @@ export default function Portfolio() {
         <section id="contact" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
-              <h2 className="mb-6 text-2xl font-bold md:text-3xl">Get In Touch</h2>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl">
+                Get In Touch
+              </h2>
               <div className="grid gap-6 md:grid-cols-2">
                 <FadeIn delay={0.2} direction="left">
                   <Card>
@@ -592,7 +691,9 @@ export default function Portfolio() {
                       </div>
                       <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-muted-foreground" />
-                        <p>www.linkedin.com/in/matheus-alves-pereira-da-silva/</p>
+                        <p>
+                          www.linkedin.com/in/matheus-alves-pereira-da-silva/
+                        </p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Github className="h-5 w-5 text-muted-foreground" />
@@ -602,7 +703,9 @@ export default function Portfolio() {
                   </Card>
                 </FadeIn>
 
-                <FadeIn delay={0.3} direction="right">
+                {/*
+                remove the contact form */}
+                {/* <FadeIn delay={0.3} direction="right">
                   <Card>
                     <CardHeader>
                       <CardTitle>Send Me a Message</CardTitle>
@@ -611,7 +714,10 @@ export default function Portfolio() {
                       <form className="space-y-4">
                         <div className="grid gap-4">
                           <div className="grid gap-2">
-                            <label htmlFor="name" className="text-sm font-medium">
+                            <label
+                              htmlFor="name"
+                              className="text-sm font-medium"
+                            >
                               Name
                             </label>
                             <input
@@ -621,7 +727,10 @@ export default function Portfolio() {
                             />
                           </div>
                           <div className="grid gap-2">
-                            <label htmlFor="email" className="text-sm font-medium">
+                            <label
+                              htmlFor="email"
+                              className="text-sm font-medium"
+                            >
                               Email
                             </label>
                             <input
@@ -632,7 +741,10 @@ export default function Portfolio() {
                             />
                           </div>
                           <div className="grid gap-2">
-                            <label htmlFor="message" className="text-sm font-medium">
+                            <label
+                              htmlFor="message"
+                              className="text-sm font-medium"
+                            >
                               Message
                             </label>
                             <textarea
@@ -648,7 +760,7 @@ export default function Portfolio() {
                       </form>
                     </CardContent>
                   </Card>
-                </FadeIn>
+                </FadeIn> */}
               </div>
             </div>
           </FadeIn>
@@ -662,13 +774,21 @@ export default function Portfolio() {
             © {new Date().getFullYear()} Matheus Alves. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/MatheusAlvesPereira" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://github.com/MatheusAlvesPereira"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
@@ -684,5 +804,5 @@ export default function Portfolio() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
