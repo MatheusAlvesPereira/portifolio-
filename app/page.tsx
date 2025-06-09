@@ -38,7 +38,10 @@ export default function Portfolio() {
       {/* Header */}
       <header className="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-lg font-bold">
+          <Link
+            href="/"
+            className="flex items-center ml-4 gap-2 text-lg font-bold"
+          >
             <span>Matheus Alves</span>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -73,7 +76,7 @@ export default function Portfolio() {
               Contact
             </Link>
           </nav>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 mr-2">
             <ThemeToggle />
             <div className="hidden md:flex items-center gap-2">
               <Link
@@ -108,7 +111,7 @@ export default function Portfolio() {
         </div>
       </header>
 
-      <main className="container py-8 md:py-12">
+      <main className="container py-8 px-8 md:py-12">
         {/* Hero Section */}
         <section className="mx-auto flex max-w-[980px] flex-col items-center gap-4 py-8 md:py-12 lg:py-16 text-center">
           <motion.div
@@ -768,7 +771,7 @@ export default function Portfolio() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t bg-muted/40">
+      <footer className="border-t bg-muted/40 md:px-12">
         <div className="container flex flex-col items-center justify-between gap-4 py-8 md:h-24 md:flex-row md:py-0">
           <div className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Matheus Alves. All rights reserved.
