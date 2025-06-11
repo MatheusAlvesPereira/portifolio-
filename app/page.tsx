@@ -142,8 +142,8 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="max-w-[700px] text-base text-muted-foreground md:text-lg"
           >
-            A creative developer focused on creating beautiful and functional
-            web experiences.
+            A creative Software Engineer focused on building modern and robust
+            applications.
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -169,7 +169,7 @@ export default function Portfolio() {
                 <FadeIn delay={0.2} direction="left">
                   <div>
                     <p className="mb-4 text-muted-foreground">
-                      I am a Software Developer, I like working with different
+                      I am a Software Engineer, I like working with different
                       technologies, opening web projects based on a defined
                       Design and developing applications: front-end, and
                       back-end. I love studying Software Development.
