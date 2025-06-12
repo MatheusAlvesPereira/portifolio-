@@ -1,13 +1,11 @@
 ### This portifolio uses v0 vercel 
 
-https://github.com/user-attachments/assets/f1374e1c-98a6-4232-853a-e3258c344411
-
-![potifoliopostnotwiterenosite](https://github.com/user-attachments/assets/e9314769-ad17-49b3-b4a9-b70d90960f8e)
+https://github.com/user-attachments/assets/ed1368ba-5645-4cbf-9f69-cb574222063c
 
 # How to run project:
 
-## run npm i --force
+#### run npm i --force
 
-## run npm run dev for dev development
+#### run npm run dev
 
-## start edit files
+#### start edit files
