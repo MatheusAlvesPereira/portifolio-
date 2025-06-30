@@ -233,14 +233,14 @@ export default function Portfolio() {
                           backend services.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>PHP 5.6</Badge>
-                          <Badge>PHP 7</Badge>
-                          <Badge>PHP 8</Badge>
+                          <Badge>Kotlin</Badge>
+                          <Badge>PHP</Badge>
                           <Badge>Zend Framework</Badge>
-                          <Badge>Laravel 9</Badge>
+                          <Badge>Laravel</Badge>
                           <Badge>Docker</Badge>
                           <Badge>Docker compose</Badge>
                           <Badge>SQL Server</Badge>
+                          <Badge>AWS</Badge>
                         </div>
                       </div>
                     </div>
@@ -257,7 +257,7 @@ export default function Portfolio() {
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Nov 2023 - Present</span>
+                            <span>Nov 2023 - Jul 2025</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
@@ -272,8 +272,9 @@ export default function Portfolio() {
                           practices using Git.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>PHP 8</Badge>
-                          <Badge>Laravel 12</Badge>
+                          <Badge>Kotlin</Badge>
+                          <Badge>PHP</Badge>
+                          <Badge>Laravel</Badge>
                           <Badge>Next.js</Badge>
                           <Badge>REST APIs</Badge>
                         </div>
@@ -355,9 +356,10 @@ export default function Portfolio() {
                         experience.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>Kotlin</Badge>
                         <Badge>PHP</Badge>
                         <Badge>Zend Framework</Badge>
-                        <Badge>Laravel 9</Badge>
+                        <Badge>Laravel</Badge>
                         <Badge>Docker</Badge>
                         <Badge>Docker compose</Badge>
                         <Badge>SQL Server</Badge>
@@ -409,9 +411,10 @@ export default function Portfolio() {
                         bringing together various projects in one place.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>Kotlin</Badge>
                         <Badge>TypeScript</Badge>
                         <Badge>Node.js</Badge>
-                        <Badge>Laravel 12</Badge>
+                        <Badge>Laravel</Badge>
                         <Badge>Next.js</Badge>
                         <Badge>REST APIs</Badge>
                       </div>
@@ -601,23 +604,23 @@ export default function Portfolio() {
                     <CardContent>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
-                          <Badge>PHP 5.6 | 7 | 8 </Badge>
+                          <Badge>Kotlin</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Node.js</Badge>
+                          <Badge>Java</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Laravel</Badge>
+                          <Badge>PHP </Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Spring Boot</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>Zend Framework</Badge>
-                          <span className="text-sm text-muted-foreground"></span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Java 11</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
@@ -640,7 +643,6 @@ export default function Portfolio() {
                           <Badge>Elementor</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
-
                         <li className="flex items-center gap-2">
                           <Badge>Git/GitHub</Badge>
                           <span className="text-sm text-muted-foreground"></span>
@@ -655,6 +657,10 @@ export default function Portfolio() {
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>Docker compose</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>AWS</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
