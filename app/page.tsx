@@ -233,7 +233,7 @@ export default function Portfolio() {
                           backend services.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>Kotlin</Badge>
+                          <Badge>Node.js</Badge>
                           <Badge>PHP</Badge>
                           <Badge>Zend Framework</Badge>
                           <Badge>Laravel</Badge>
@@ -272,7 +272,7 @@ export default function Portfolio() {
                           practices using Git.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>Kotlin</Badge>
+                          <Badge>Node.js</Badge>
                           <Badge>PHP</Badge>
                           <Badge>Laravel</Badge>
                           <Badge>Next.js</Badge>
@@ -313,9 +313,8 @@ export default function Portfolio() {
                           <Badge>CSS3</Badge>
                           <Badge>JavaScript</Badge>
                           <Badge>Vue.js</Badge>
+                          <Badge>React</Badge>
                           <Badge>CI/CD</Badge>
-                          <Badge>Java 11</Badge>
-                          <Badge>Spring Boot</Badge>
                         </div>
                       </div>
                     </div>
@@ -356,7 +355,7 @@ export default function Portfolio() {
                         experience.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        <Badge>Kotlin</Badge>
+                        <Badge>Node.js</Badge>
                         <Badge>PHP</Badge>
                         <Badge>Zend Framework</Badge>
                         <Badge>Laravel</Badge>
@@ -411,9 +410,8 @@ export default function Portfolio() {
                         bringing together various projects in one place.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        <Badge>Kotlin</Badge>
-                        <Badge>TypeScript</Badge>
                         <Badge>Node.js</Badge>
+                        <Badge>TypeScript</Badge>
                         <Badge>Laravel</Badge>
                         <Badge>Next.js</Badge>
                         <Badge>REST APIs</Badge>
@@ -466,6 +464,7 @@ export default function Portfolio() {
                         stores nationwide.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>React</Badge>
                         <Badge>Vue.js</Badge>
                         <Badge>Javascript</Badge>
                         <Badge>HTML5</Badge>
@@ -604,11 +603,7 @@ export default function Portfolio() {
                     <CardContent>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
-                          <Badge>Kotlin</Badge>
-                          <span className="text-sm text-muted-foreground"></span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Java</Badge>
+                          <Badge>Node.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
@@ -616,7 +611,7 @@ export default function Portfolio() {
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Spring Boot</Badge>
+                          <Badge>Express.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
@@ -701,12 +696,26 @@ export default function Portfolio() {
                       <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-muted-foreground" />
                         <p>
-                          www.linkedin.com/in/matheus-alves-pereira-da-silva/
+                          <Link
+                            href="https://encurtador.com.br/Bcv8I"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            https://encurtador.com.br/Bcv8I
+                          </Link>
                         </p>
                       </div>
                       <div className="flex items-center gap-3">
                         <Github className="h-5 w-5 text-muted-foreground" />
-                        <p>github.com/MatheusAlvesPereira</p>
+                        <p>
+                          <Link
+                            href="https://github.com/MatheusAlvesPereira"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            github.com/MatheusAlvesPereira
+                          </Link>
+                        </p>
                       </div>
                     </CardContent>
                   </Card>
