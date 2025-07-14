@@ -225,12 +225,15 @@ export default function Portfolio() {
                           <span>FutebolCard.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed payment systems and website automation
-                          systems using PHP (PHP5, PHP7, PHP8) and Zend
-                          Framework. Improved transaction handling efficiency by
-                          optimizing existing codebases. Collaborated with
-                          front-end teams to ensure seamless integration of
-                          backend services.
+                          Developed and maintained payment systems and internal APIs using PHP (v5, v7, v8) and Zend Framework, and created Node.js based services for automation and system integrations.<br/>
+                          <br/>
+                          Worked directly with SQL Server and MySQL databases, handling complex queries, data modeling, and performance optimization.<br/>
+                          <br/>
+                          Refactored and optimized legacy code, achieving up to 30% improvement in transaction processing and reducing error rates in production environments.<br/>
+                          <br/>
+                          Built automated routines for operational processes and third-party system integrations.<br/>
+                          <br/>
+                          Collaborated closely with front-end teams to ensure seamless integration between APIs and user interfaces.<br/>
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
@@ -265,11 +268,13 @@ export default function Portfolio() {
                           <span>Anoto.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Created and maintained open-source projects with over
-                          50 contributors. Designed REST APIs for seamless
-                          integration with various applications. Facilitated
-                          collaboration by implementing version control best
-                          practices using Git.
+                          Led and maintained scalable open-source projects with 50+ active contributors, fostering global collaboration and adoption of engineering best practices.<br/>
+                          <br/>
+                          Designed and maintained robust RESTful APIs using Node.js and Express.js, enabling integration with multiple third-party systems.<br/>
+                          <br/>
+                          Applied modern Git workflows (feature branches, pull requests) and implemented continuous integration pipelines using GitHub Actions.<br/>
+                          <br/>
+                          Wrote clear and accessible technical documentation using Swagger/OpenAPI, facilitating onboarding for new contributors and increasing adoption.<br/>
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
@@ -289,7 +294,7 @@ export default function Portfolio() {
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <h3 className="text-xl font-semibold">
-                            Software Engineer Internship
+                            Full Stack Developer
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
@@ -301,12 +306,11 @@ export default function Portfolio() {
                           <span>Muniz Auto Center.</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed responsive web applications using React and
-                          Vue.js, improving user experience and accessibility by
-                          15%. Implemented SEO best practices to increase
-                          website traffic by 20%. Created CI/CD processes to
-                          streamline deployment workflows.Tags: Java, Spring
-                          Boot React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
+                          Built responsive and performant web applications using React.js and Vue.js, improving accessibility and usability by 15% based on user feedback and performance metrics.<br/>
+                          <br/>
+                          Implemented technical SEO strategies, including semantic markup and efficient page loading, resulting in a 20% increase in organic traffic.<br/>
+                          <br/>
+                          Created and maintained CI/CD pipelines across multiple environments using GitHub Actions and GitLab CI, reducing deployment time and improving release stability.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
