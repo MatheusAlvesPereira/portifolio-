@@ -278,10 +278,7 @@ export default function Portfolio() {
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
-                          <Badge>PHP</Badge>
-                          <Badge>Laravel</Badge>
-                          <Badge>Next.js</Badge>
-                          <Badge>REST APIs</Badge>
+                          <Badge>Kotlin</Badge>
                         </div>
                       </div>
                     </div>
@@ -315,6 +312,8 @@ export default function Portfolio() {
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
                           <Badge>CSS3</Badge>
+                          <Badge>Node.js</Badge>
+                          <Badge>Java</Badge>
                           <Badge>JavaScript</Badge>
                           <Badge>Vue.js</Badge>
                           <Badge>React</Badge>
@@ -415,10 +414,7 @@ export default function Portfolio() {
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Node.js</Badge>
-                        <Badge>TypeScript</Badge>
-                        <Badge>Laravel</Badge>
-                        <Badge>Next.js</Badge>
-                        <Badge>REST APIs</Badge>
+                        <Badge>Kotlin</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
@@ -608,6 +604,10 @@ export default function Portfolio() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Badge>Node.js</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Java </Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
