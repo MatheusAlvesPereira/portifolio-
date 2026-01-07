@@ -610,6 +610,11 @@ export default function Portfolio() {
                           <Badge>Java </Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
+
+                          <li className="flex items-center gap-2">
+                              <Badge>Kotlin</Badge>
+                              <span className="text-sm text-muted-foreground"></span>
+                          </li>
                         <li className="flex items-center gap-2">
                           <Badge>PHP </Badge>
                           <span className="text-sm text-muted-foreground"></span>
