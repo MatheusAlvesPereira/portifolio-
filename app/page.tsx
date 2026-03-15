@@ -206,6 +206,40 @@ export default function Portfolio() {
               </h2>
               <div className="space-y-8">
                 <StaggerContainer className="space-y-8">
+                  {/* Experience Item 0 */}
+                  <StaggerItem>
+                    <div className="relative pl-8 border-l-2 border-muted pb-8">
+                      <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
+                      <div className="space-y-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                          <h3 className="text-xl font-semibold">
+                            Full Stack Engineer
+                          </h3>
+                          <div className="flex items-center text-sm text-muted-foreground">
+                            <Calendar className="mr-1 h-4 w-4" />
+                            <span>mar 2026 - present</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center text-base font-medium">
+                          <Building className="mr-2 h-4 w-4" />
+                          <span>TradeToWorld</span>
+                        </div>
+                        <p className="text-muted-foreground">
+                          
+                        </p>
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          <Badge>Node.js</Badge>
+                          <Badge>Typescript</Badge>
+                          <Badge>Prisma DB</Badge>
+                          <Badge>Docker</Badge>
+                          <Badge>Docker compose</Badge>
+                          <Badge>PostgreSQL</Badge>
+                          <Badge>AWS</Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </StaggerItem>
+
                   {/* Experience Item 1 */}
                   <StaggerItem>
                     <div className="relative pl-8 border-l-2 border-muted pb-8">
@@ -217,7 +251,7 @@ export default function Portfolio() {
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>dec 2024 - Present</span>
+                            <span>dec 2024 - mar 2026</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
@@ -236,7 +270,6 @@ export default function Portfolio() {
                           Collaborated closely with front-end teams to ensure seamless integration between APIs and user interfaces.<br/>
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          <Badge>Node.js</Badge>
                           <Badge>PHP</Badge>
                           <Badge>Zend Framework</Badge>
                           <Badge>Laravel</Badge>
@@ -278,7 +311,9 @@ export default function Portfolio() {
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
-                          <Badge>Kotlin</Badge>
+                          <Badge>Express.js</Badge>
+                          <Badge>Next.js</Badge>
+                          <Badge>REST APIs</Badge>
                         </div>
                       </div>
                     </div>
@@ -358,7 +393,6 @@ export default function Portfolio() {
                         experience.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
-                        <Badge>Node.js</Badge>
                         <Badge>PHP</Badge>
                         <Badge>Zend Framework</Badge>
                         <Badge>Laravel</Badge>
@@ -413,8 +447,10 @@ export default function Portfolio() {
                         bringing together various projects in one place.
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>TypeScript</Badge>
                         <Badge>Node.js</Badge>
-                        <Badge>Kotlin</Badge>
+                        <Badge>Next.js</Badge>
+                        <Badge>REST APIs</Badge>
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between mt-auto">
@@ -467,6 +503,7 @@ export default function Portfolio() {
                         <Badge>React</Badge>
                         <Badge>Vue.js</Badge>
                         <Badge>Javascript</Badge>
+                        <Badge>Node.js</Badge>
                         <Badge>HTML5</Badge>
                         <Badge>CSS3</Badge>
                       </div>
@@ -606,25 +643,17 @@ export default function Portfolio() {
                           <Badge>Node.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Java </Badge>
-                          <span className="text-sm text-muted-foreground"></span>
-                        </li>
 
                           <li className="flex items-center gap-2">
                               <Badge>Kotlin</Badge>
                               <span className="text-sm text-muted-foreground"></span>
                           </li>
                         <li className="flex items-center gap-2">
-                          <Badge>PHP </Badge>
+                          <Badge>TypeScript</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Express.js</Badge>
-                          <span className="text-sm text-muted-foreground"></span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <Badge>Zend Framework</Badge>
+                          <Badge>Next.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
@@ -664,11 +693,19 @@ export default function Portfolio() {
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>AWS</Badge>
+                          <Badge>Amazon Web Services (AWS)</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Prisma</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Badge>SQL Server</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>PostgreSQL</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
@@ -700,95 +737,37 @@ export default function Portfolio() {
                     <CardContent className="space-y-4">
                       <div className="flex items-center gap-3">
                         <Mail className="h-5 w-5 text-muted-foreground" />
-                        <p>matheusalvessilvabr@gmail.com</p>
-                      </div>
+                        <Link 
+                          href="mailto:matheusalvessilvabr@gmail.com"
+                          target="_blank">
+                          <p>matheusalvessilvabr@gmail.com</p>
+                        
+                        </Link>
+                        </div>
                       <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-muted-foreground" />
-                        <p>
-                          <Link
-                            href="https://encurtador.com.br/Bcv8I"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            https://encurtador.com.br/Bcv8I
-                          </Link>
-                        </p>
+                        <Link 
+                          href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/"
+                          target="_blank"
+                        >
+                          <p>
+                            www.linkedin.com/in/matheus-alves-pereira-da-silva/
+                          </p>
+                        </Link>
                       </div>
                       <div className="flex items-center gap-3">
                         <Github className="h-5 w-5 text-muted-foreground" />
-                        <p>
-                          <Link
-                            href="https://github.com/MatheusAlvesPereira"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            github.com/MatheusAlvesPereira
-                          </Link>
-                        </p>
+                        <Link 
+                          href="https://github.com/MatheusAlvesPereira"
+                          target="_blank"
+                        >
+                        <p>github.com/MatheusAlvesPereira</p>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
                 </FadeIn>
-
-                {/*
-                remove the contact form */}
-                {/* <FadeIn delay={0.3} direction="right">
-                  <Card>
-                    <CardHeader>
-                      <CardTitle>Send Me a Message</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <form className="space-y-4">
-                        <div className="grid gap-4">
-                          <div className="grid gap-2">
-                            <label
-                              htmlFor="name"
-                              className="text-sm font-medium"
-                            >
-                              Name
-                            </label>
-                            <input
-                              id="name"
-                              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                              placeholder="Your name"
-                            />
-                          </div>
-                          <div className="grid gap-2">
-                            <label
-                              htmlFor="email"
-                              className="text-sm font-medium"
-                            >
-                              Email
-                            </label>
-                            <input
-                              id="email"
-                              type="email"
-                              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                              placeholder="Your email"
-                            />
-                          </div>
-                          <div className="grid gap-2">
-                            <label
-                              htmlFor="message"
-                              className="text-sm font-medium"
-                            >
-                              Message
-                            </label>
-                            <textarea
-                              id="message"
-                              className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                              placeholder="Your message"
-                            />
-                          </div>
-                        </div>
-                        <Button type="submit" className="w-full">
-                          Send Message
-                        </Button>
-                      </form>
-                    </CardContent>
-                  </Card>
-                </FadeIn> */}
-              </div>
+                </div>
             </div>
           </FadeIn>
         </section>
