@@ -330,11 +330,12 @@ export default function Portfolio() {
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
                           <Badge>CSS3</Badge>
+                          <Badge>Node.js</Badge>
+                          <Badge>Java</Badge>
                           <Badge>JavaScript</Badge>
                           <Badge>Vue.js</Badge>
+                          <Badge>React</Badge>
                           <Badge>CI/CD</Badge>
-                          <Badge>Java 11</Badge>
-                          <Badge>Spring Boot</Badge>
                         </div>
                       </div>
                     </div>
@@ -530,6 +531,7 @@ export default function Portfolio() {
                         {t.projects.items[2].description}
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>React</Badge>
                         <Badge>Vue.js</Badge>
                         <Badge>Javascript</Badge>
                         <Badge>Node.js</Badge>
@@ -670,6 +672,11 @@ export default function Portfolio() {
                           <Badge>Node.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
+
+                          <li className="flex items-center gap-2">
+                              <Badge>Kotlin</Badge>
+                              <span className="text-sm text-muted-foreground"></span>
+                          </li>
                         <li className="flex items-center gap-2">
                           <Badge>TypeScript</Badge>
                           <span className="text-sm text-muted-foreground"></span>
