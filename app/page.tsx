@@ -23,8 +23,11 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
+import { useLanguage } from "@/context/language-context";
+import { translations } from "@/lib/translations";
 import heroprofilepicture from "@/public/heroprofilepicture.jpg";
 import infoprofile from "@/public/infoprofile.png";
 import futebolCard from "@/public/futebolcard.png";
@@ -33,6 +36,9 @@ import munizAutoCenter from "@/public/MunizAutoCenter.png";
 import realCripto from "@/public/RealCripto.png";
 
 export default function Portfolio() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -49,34 +55,35 @@ export default function Portfolio() {
               href="#about"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              About
+              {t.nav.about}
             </Link>
             <Link
               href="#experience"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              Experience
+              {t.nav.experience}
             </Link>
             <Link
               href="#projects"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              Projects
+              {t.nav.projects}
             </Link>
             <Link
               href="#skills"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              Skills
+              {t.nav.skills}
             </Link>
             <Link
               href="#contact"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
-              Contact
+              {t.nav.contact}
             </Link>
           </nav>
           <div className="flex items-center gap-2 mr-2">
+            <LanguageToggle />
             <ThemeToggle />
             <div className="hidden md:flex items-center gap-2">
               <Link
@@ -134,7 +141,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:text-5xl"
           >
-            Hi, I'm Matheus Alves
+            {t.hero.greeting}
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -142,8 +149,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="max-w-[700px] text-base text-muted-foreground md:text-lg"
           >
-            A creative Software Engineer focused on building modern and robust
-            applications.
+            {t.hero.subtitle}
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -152,10 +158,10 @@ export default function Portfolio() {
             className="flex flex-col sm:flex-row gap-4 mt-2"
           >
             <Button asChild>
-              <Link href="#projects">View My Work</Link>
+              <Link href="#projects">{t.hero.viewWork}</Link>
             </Button>
             <Button variant="outline" asChild>
-              <Link href="#contact">Contact Me</Link>
+              <Link href="#contact">{t.hero.contactMe}</Link>
             </Button>
           </motion.div>
         </section>
@@ -164,20 +170,15 @@ export default function Portfolio() {
         <section id="about" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
-              <h2 className="mb-6 text-2xl font-bold md:text-3xl">About Me</h2>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl">{t.about.title}</h2>
               <div className="grid gap-6 md:grid-cols-2">
                 <FadeIn delay={0.2} direction="left">
                   <div>
                     <p className="mb-4 text-muted-foreground">
-                      I am a Software Engineer, I like working with different
-                      technologies, opening web projects based on a defined
-                      Design and developing applications: front-end, and
-                      back-end. I love studying Software Development.
+                      {t.about.p1}
                     </p>
                     <p className="text-muted-foreground">
-                      When I'm not coding, you can find me exploring new
-                      technologies, contributing to open-source projects, or
-                      enjoying outdoor activities.
+                      {t.about.p2}
                     </p>
                   </div>
                 </FadeIn>
@@ -202,7 +203,7 @@ export default function Portfolio() {
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
               <h2 className="mb-6 text-2xl font-bold md:text-3xl">
-                Work Experience
+                {t.experience.title}
               </h2>
               <div className="space-y-8">
                 <StaggerContainer className="space-y-8">
@@ -213,19 +214,19 @@ export default function Portfolio() {
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <h3 className="text-xl font-semibold">
-                            Full Stack Engineer
+                            {t.experience.jobs[0].role}
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>mar 2026 - present</span>
+                            <span>{t.experience.jobs[0].period}</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>TradeToWorld</span>
+                          <span>{t.experience.jobs[0].company}</span>
                         </div>
                         <p className="text-muted-foreground">
-                          
+                          {t.experience.jobs[0].description}
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
@@ -247,24 +248,19 @@ export default function Portfolio() {
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <h3 className="text-xl font-semibold">
-                            Software Engineer
+                            {t.experience.jobs[1].role}
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>dec 2024 - mar 2026</span>
+                            <span>{t.experience.jobs[1].period}</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>FutebolCard.</span>
+                          <span>{t.experience.jobs[1].company}</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed payment systems and website automation
-                          systems using PHP (PHP5, PHP7, PHP8) and Zend
-                          Framework. Improved transaction handling efficiency by
-                          optimizing existing codebases. Collaborated with
-                          front-end teams to ensure seamless integration of
-                          backend services.
+                          {t.experience.jobs[1].description}
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>PHP</Badge>
@@ -286,23 +282,19 @@ export default function Portfolio() {
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <h3 className="text-xl font-semibold">
-                            Software Engineer
+                            {t.experience.jobs[2].role}
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Nov 2023 - Jul 2025</span>
+                            <span>{t.experience.jobs[2].period}</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>Anoto.</span>
+                          <span>{t.experience.jobs[2].company}</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Created and maintained open-source projects with over
-                          50 contributors. Designed REST APIs for seamless
-                          integration with various applications. Facilitated
-                          collaboration by implementing version control best
-                          practices using Git.
+                          {t.experience.jobs[2].description}
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>Node.js</Badge>
@@ -321,24 +313,19 @@ export default function Portfolio() {
                       <div className="space-y-2">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                           <h3 className="text-xl font-semibold">
-                            Software Engineer Internship
+                            {t.experience.jobs[3].role}
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>Jul 2023 - dec 2023</span>
+                            <span>{t.experience.jobs[3].period}</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
                           <Building className="mr-2 h-4 w-4" />
-                          <span>Muniz Auto Center.</span>
+                          <span>{t.experience.jobs[3].company}</span>
                         </div>
                         <p className="text-muted-foreground">
-                          Developed responsive web applications using React and
-                          Vue.js, improving user experience and accessibility by
-                          15%. Implemented SEO best practices to increase
-                          website traffic by 20%. Created CI/CD processes to
-                          streamline deployment workflows.Tags: Java, Spring
-                          Boot React, HTML, CSS, JavaScript, Vue.js, Git, CI/CD.
+                          {t.experience.jobs[3].description}
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                           <Badge>HTML5</Badge>
@@ -361,11 +348,64 @@ export default function Portfolio() {
         {/* Projects Section */}
         <section id="projects" className="py-8 md:py-12 scroll-mt-20">
           <FadeIn>
-            <div className="mx-auto max-w-[1200px]">
+            <div className="mx-auto max-w-[980px]">
               <h2 className="mb-6 text-2xl font-bold md:text-3xl">
-                My Projects
+                {t.projects.title}
               </h2>
               <StaggerContainer className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                {/* Project 0 */}
+                <StaggerItem>
+                  <Card className="flex flex-col h-full">
+                    <CardHeader className="p-4">
+                      <div className="aspect-video overflow-hidden rounded-lg">
+                        <Image
+                          src={realCripto}
+                          width={350}
+                          height={200}
+                          alt="Project 0"
+                          className="h-full w-full object-cover transition-transform hover:scale-105"
+                        />
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <CardTitle>{t.projects.items[4].name}</CardTitle>
+                      <CardDescription className="mt-2">
+                        {t.projects.items[4].description}
+                      </CardDescription>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        <Badge>Node.js</Badge>
+                        <Badge>TypeScript</Badge>
+                        <Badge>Prisma DB</Badge>
+                        <Badge>Docker</Badge>
+                        <Badge>PostgreSQL</Badge>
+                        <Badge>AWS</Badge>
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex justify-between mt-auto">
+                      <Button variant="outline" size="sm" asChild>
+                        <Link
+                          href="#"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="mr-2 h-4 w-4" />
+                          {t.projects.code}
+                        </Link>
+                      </Button>
+                      <Button size="sm" asChild>
+                        <Link
+                          href="https://realcripto.com.br/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          {t.projects.liveDemo}
+                        </Link>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </StaggerItem>
+
                 {/* Project 1 */}
                 <StaggerItem>
                   <Card className="flex flex-col h-full">
@@ -381,11 +421,9 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>FutebolCard</CardTitle>
+                      <CardTitle>{t.projects.items[0].name}</CardTitle>
                       <CardDescription className="mt-2">
-                        Provides tailored solutions to top football clubs and
-                        stadiums in Brazil and the US, enhancing the fan
-                        experience.
+                        {t.projects.items[0].description}
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>PHP</Badge>
@@ -404,7 +442,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <Github className="mr-2 h-4 w-4" />
-                          Code(Private)
+                          {t.projects.code}
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
@@ -414,7 +452,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
+                          {t.projects.liveDemo}
                         </Link>
                       </Button>
                     </CardFooter>
@@ -436,10 +474,9 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Anoto</CardTitle>
+                      <CardTitle>{t.projects.items[1].name}</CardTitle>
                       <CardDescription className="mt-2">
-                        Anoto is an organization that serves as a notebook,
-                        bringing together various projects in one place.
+                        {t.projects.items[1].description}
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>TypeScript</Badge>
@@ -456,7 +493,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <Github className="mr-2 h-4 w-4" />
-                          Code
+                          {t.projects.code}
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
@@ -466,7 +503,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
+                          {t.projects.liveDemo}
                         </Link>
                       </Button>
                     </CardFooter>
@@ -488,11 +525,9 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>Muniz Auto Center</CardTitle>
+                      <CardTitle>{t.projects.items[2].name}</CardTitle>
                       <CardDescription className="mt-2">
-                        The largest auto center franchise in Brazil — and the
-                        fastest-growing. A 100% Brazilian business with over 150
-                        stores nationwide.
+                        {t.projects.items[2].description}
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Vue.js</Badge>
@@ -502,7 +537,7 @@ export default function Portfolio() {
                         <Badge>CSS3</Badge>
                       </div>
                     </CardContent>
-                    <CardFooter className="flex justify-between mt-auto">
+                    <CardFooter className="flex justify-between mt-auto ">
                       <Button variant="outline" size="sm" asChild>
                         <Link
                           href="#"
@@ -510,7 +545,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <Github className="mr-2 h-4 w-4" />
-                          Code(Private)
+                          {t.projects.code}
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
@@ -520,7 +555,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
+                          {t.projects.liveDemo}
                         </Link>
                       </Button>
                     </CardFooter>
@@ -542,11 +577,9 @@ export default function Portfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <CardTitle>RealCripto</CardTitle>
+                      <CardTitle>{t.projects.items[3].name}</CardTitle>
                       <CardDescription className="mt-2">
-                        This website is an informational platform focused on
-                        providing data and insights about the cryptocurrency
-                        market.
+                        {t.projects.items[3].description}
                       </CardDescription>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Badge>Wordpress</Badge>
@@ -561,7 +594,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <Github className="mr-2 h-4 w-4" />
-                          Code(Private)
+                          {t.projects.code}
                         </Link>
                       </Button>
                       <Button size="sm" asChild>
@@ -571,7 +604,7 @@ export default function Portfolio() {
                           rel="noopener noreferrer"
                         >
                           <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
+                          {t.projects.liveDemo}
                         </Link>
                       </Button>
                     </CardFooter>
@@ -587,7 +620,7 @@ export default function Portfolio() {
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
               <h2 className="mb-6 text-2xl font-bold md:text-3xl">
-                Skills & Technologies
+                {t.skills.title}
               </h2>
               <StaggerContainer className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <StaggerItem>
@@ -653,7 +686,7 @@ export default function Portfolio() {
                 <StaggerItem>
                   <Card>
                     <CardHeader>
-                      <CardTitle>Other</CardTitle>
+                      <CardTitle>{t.skills.other}</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
@@ -715,27 +748,27 @@ export default function Portfolio() {
           <FadeIn>
             <div className="mx-auto max-w-[980px]">
               <h2 className="mb-6 text-2xl font-bold md:text-3xl">
-                Get In Touch
+                {t.contact.title}
               </h2>
               <div className="grid gap-6 md:grid-cols-2">
                 <FadeIn delay={0.2} direction="left">
                   <Card>
                     <CardHeader>
-                      <CardTitle>Contact Information</CardTitle>
+                      <CardTitle>{t.contact.cardTitle}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="flex items-center gap-3">
                         <Mail className="h-5 w-5 text-muted-foreground" />
-                        <Link 
+                        <Link
                           href="mailto:matheusalvessilvabr@gmail.com"
-                          target="_blank">
+                          target="_blank"
+                        >
                           <p>matheusalvessilvabr@gmail.com</p>
-                        
                         </Link>
-                        </div>
+                      </div>
                       <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-muted-foreground" />
-                        <Link 
+                        <Link
                           href="https://www.linkedin.com/in/matheus-alves-pereira-da-silva/"
                           target="_blank"
                         >
@@ -746,17 +779,17 @@ export default function Portfolio() {
                       </div>
                       <div className="flex items-center gap-3">
                         <Github className="h-5 w-5 text-muted-foreground" />
-                        <Link 
+                        <Link
                           href="https://github.com/MatheusAlvesPereira"
                           target="_blank"
                         >
-                        <p>github.com/MatheusAlvesPereira</p>
+                          <p>github.com/MatheusAlvesPereira</p>
                         </Link>
                       </div>
                     </CardContent>
                   </Card>
                 </FadeIn>
-                </div>
+              </div>
             </div>
           </FadeIn>
         </section>
@@ -766,7 +799,7 @@ export default function Portfolio() {
       <footer className="border-t bg-muted/40 md:px-12">
         <div className="container flex flex-col items-center justify-between gap-4 py-8 md:h-24 md:flex-row md:py-0">
           <div className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Matheus Alves. All rights reserved.
+            © {new Date().getFullYear()} Matheus Alves. {t.footer.rights}
           </div>
           <div className="flex items-center gap-4">
             <Link

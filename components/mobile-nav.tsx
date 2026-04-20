@@ -6,9 +6,13 @@ import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
+import { useLanguage } from "@/context/language-context"
+import { translations } from "@/lib/translations"
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
+  const { language } = useLanguage()
+  const t = translations[language]
 
   const handleLinkClick = () => {
     setOpen(false)
@@ -30,7 +34,7 @@ export function MobileNav() {
               className="text-lg font-medium hover:underline underline-offset-4"
               onClick={handleLinkClick}
             >
-              About
+              {t.nav.about}
             </Link>
           </SheetClose>
           <SheetClose asChild>
@@ -39,7 +43,7 @@ export function MobileNav() {
               className="text-lg font-medium hover:underline underline-offset-4"
               onClick={handleLinkClick}
             >
-              Experience
+              {t.nav.experience}
             </Link>
           </SheetClose>
           <SheetClose asChild>
@@ -48,7 +52,7 @@ export function MobileNav() {
               className="text-lg font-medium hover:underline underline-offset-4"
               onClick={handleLinkClick}
             >
-              Projects
+              {t.nav.projects}
             </Link>
           </SheetClose>
           <SheetClose asChild>
@@ -57,7 +61,7 @@ export function MobileNav() {
               className="text-lg font-medium hover:underline underline-offset-4"
               onClick={handleLinkClick}
             >
-              Skills
+              {t.nav.skills}
             </Link>
           </SheetClose>
           <SheetClose asChild>
@@ -66,7 +70,7 @@ export function MobileNav() {
               className="text-lg font-medium hover:underline underline-offset-4"
               onClick={handleLinkClick}
             >
-              Contact
+              {t.nav.contact}
             </Link>
           </SheetClose>
         </div>
