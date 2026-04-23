@@ -34,6 +34,7 @@ import futebolCard from "@/public/futebolcard.png";
 import anoto from "@/public/anoto.png";
 import munizAutoCenter from "@/public/MunizAutoCenter.png";
 import realCripto from "@/public/RealCripto.png";
+import tradetToWWorld from "@/public/Tradetoworld.png";
 
 export default function Portfolio() {
   const { language } = useLanguage();
@@ -359,7 +360,7 @@ export default function Portfolio() {
                     <CardHeader className="p-4">
                       <div className="aspect-video overflow-hidden rounded-lg">
                         <Image
-                          src={realCripto}
+                          src={tradetToWWorld}
                           width={350}
                           height={200}
                           alt="Project 0"
