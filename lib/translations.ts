@@ -110,7 +110,7 @@ export const translations = {
     hero: {
       greeting: "Olá, eu sou Matheus Alves",
       subtitle:
-        "Engenheiro de Software criativo, focado em criar aplicações modernas e robustas.",
+        "Desenvolvedor Node.js focado em criar aplicações modernas e robustas.",
       viewWork: "Ver Meus Projetos",
       contactMe: "Fale Comigo",
     },
@@ -181,7 +181,7 @@ export const translations = {
         {
           name: "TradeToWorld",
           description:
-            "TradeToWorld is a tech B2B Saas Marketplace enabling SMEs' access to international markets through trade process automation, marketing tools and full trade operations support on demand.",
+            "A TradeToWorld é um marketplace B2B SaaS de tecnologia que viabiliza o acesso de PMEs ao mercado internacional por meio da automação de processos comerciais, ferramentas de marketing e suporte completo sob demanda para operações de comércio exterior.",
         },
       ],
     },
