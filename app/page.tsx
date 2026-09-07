@@ -206,6 +206,45 @@ export default function Portfolio() {
               </h2>
               <div className="space-y-8">
                 <StaggerContainer className="space-y-8">
+
+                  {/* Experience Item 1 */}
+                  <StaggerItem>
+                    <div className="relative pl-8 border-l-2 border-muted pb-8">
+                      <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
+                      <div className="space-y-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                          <h3 className="text-xl font-semibold">
+                            Back-end Engineer
+                          </h3>
+                          <div className="flex items-center text-sm text-muted-foreground">
+                            <Calendar className="mr-1 h-4 w-4" />
+                            <span>apr 2025 - jun 2026</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center text-base font-medium">
+                          <Building className="mr-2 h-4 w-4" />
+                          <span>Namu.</span>
+                        </div>
+                        <p className="text-muted-foreground">
+                          Developed and maintained mobile apps and web services.
+                        </p>
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          <Badge>Typescript</Badge>
+                          <Badge>React Native</Badge>
+                          <Badge>Mobile integrations IOS | Android</Badge>
+                          <Badge>React</Badge>
+                          <Badge>Node</Badge>
+                          <Badge>Nest.js</Badge>
+                          <Badge>PHP</Badge>
+                          <Badge>Laravel</Badge>
+                          <Badge>Docker</Badge>
+                          <Badge>PostgreSQL</Badge>
+                          <Badge>AWS</Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </StaggerItem>
+
                   {/* Experience Item 1 */}
                   <StaggerItem>
                     <div className="relative pl-8 border-l-2 border-muted pb-8">
@@ -217,7 +256,42 @@ export default function Portfolio() {
                           </h3>
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Calendar className="mr-1 h-4 w-4" />
-                            <span>dec 2024 - Present</span>
+                            <span>apr 2025 - jun 2026</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center text-base font-medium">
+                          <Building className="mr-2 h-4 w-4" />
+                          <span>TradeToWorld Marketplace Corporation.</span>
+                        </div>
+                        <p className="text-muted-foreground">
+                          Developed and maintained e-commerce systems.
+                        </p>
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          <Badge>Typescript</Badge>
+                          <Badge>MongoDB</Badge>
+                          <Badge>React</Badge>
+                          <Badge>Node</Badge>
+                          <Badge>Next.js</Badge>
+                          <Badge>Docker</Badge>
+                          <Badge>PostgreSQL</Badge>
+                          <Badge>AWS</Badge>
+                        </div>
+                      </div>
+                    </div>
+                  </StaggerItem>
+
+                  {/* Experience Item 1 */}
+                  <StaggerItem>
+                    <div className="relative pl-8 border-l-2 border-muted pb-8">
+                      <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-0"></div>
+                      <div className="space-y-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                          <h3 className="text-xl font-semibold">
+                            Software Engineer
+                          </h3>
+                          <div className="flex items-center text-sm text-muted-foreground">
+                            <Calendar className="mr-1 h-4 w-4" />
+                            <span>dec 2024 - apr 2025</span>
                           </div>
                         </div>
                         <div className="flex items-center text-base font-medium">
@@ -603,12 +677,13 @@ export default function Portfolio() {
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
+
                         <li className="flex items-center gap-2">
-                          <Badge>Kotlin</Badge>
+                          <Badge>Node</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Java</Badge>
+                          <Badge>Nest.js</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
@@ -616,11 +691,32 @@ export default function Portfolio() {
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Spring Boot</Badge>
+                          <Badge>Laravel</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </StaggerItem>
+
+                
+                <StaggerItem>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Mobile</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        <li className="flex items-center gap-2">
+                          <Badge>React Native</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <Badge>Zend Framework</Badge>
+                          <Badge>IOS</Badge>
+                          <span className="text-sm text-muted-foreground"></span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Badge>Android</Badge>
                           <span className="text-sm text-muted-foreground"></span>
                         </li>
                       </ul>
